@@ -144,7 +144,7 @@ module.exports = function(grunt){
         }
         else{
           // fail and stop execution of further tasks
-          deferred.reject('Failed when executing: `' + cmd + '`\n');
+          grunt.fail.warn('Failed when executing: `' + cmd + '`\n');
         }
       }
       return deferred.promise;
